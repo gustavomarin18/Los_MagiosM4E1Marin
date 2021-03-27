@@ -21,7 +21,7 @@ h4 {
     font-size: 16px;
 }
 .burger-menu {
-background-color:#03264c ;
+background-color:#1259c3 ;
 color: #ffffff;
 display: block;
 max-width: 50px;
@@ -30,6 +30,10 @@ border-radius: 8px;
 text-align: center;
 font-size: 18px;
 margin:auto;
+position: relative;
+bottom: 20px;
+
+
 
 }
 
@@ -40,3 +44,35 @@ padding: 0;
 
 
 }
+.cuotas {
+    text-align: center;
+}
+
+article {
+    margin-bottom: 10px;
+    border: solid 1px #ebebeb;
+    padding: 15px;
+}
+.descuentos {
+    color: #39b54a;
+}
+.fa-truck {
+    color:#39b54a;
+    padding: 8px 6px;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    position: relative;
+right: 50px;
+    top: -25px;
+}
+main {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+.articulos {
+    text-align: center;
+}
+
+  
