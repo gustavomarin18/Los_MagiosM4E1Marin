@@ -1,7 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    background-color: #ebebeb;
 }
+
+main {
+
+    width: 90%;
+text-align: center;}
+
+
+
+
 header {
     background-color:  #EAC926;;
 }
@@ -10,15 +20,23 @@ h3 {
 }
 .precio {
     font-size: 18px;
+    display: inline;
+    position: relative;
+    right:30%;
 }
+
 .descuentos {
     font-size: 16px;
+    display: inline;
+    position: relative;
+    right: 25%;
 }
 p {
     font-size: 12px;
 }
 h4 {
     font-size: 16px;
+    display: none;
 }
 .burger-menu {
 background-color:#1259c3 ;
@@ -31,7 +49,7 @@ text-align: center;
 font-size: 18px;
 margin:auto;
 position: relative;
-bottom: 20px;
+bottom: 5px;
 
 
 
@@ -46,6 +64,8 @@ padding: 0;
 }
 .cuotas {
     text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 article {
@@ -57,22 +77,104 @@ article {
     color: #39b54a;
 }
 .fa-truck {
+    position: relative;
     color:#39b54a;
     padding: 8px 6px;
     border: solid 1px #39b54a;
     border-radius: 50%;
-    position: relative;
-right: 50px;
     top: -25px;
-}
-main {
-    background-color: #ebebeb;
-    display: flex;
-    justify-content: center;
+    right: 15%;
 }
 
-.articulos {
+
+main {
+
+    width: 90%;
+text-align: center;}
+
+
+.logoybarra {
+    display: flex;
+   padding-top: 5vw;
+   padding-left: 5vw;
+   padding-right: 5vw;
+  
+
+}
+  nav {
+      display: none;
+  }
+footer {
+
     text-align: center;
 }
 
-  
+.fa-user-shield {
+    color: #1259c3;
+    font-size: 3em;
+}
+.fa-gift {
+    color: #1259c3;
+    font-size: 3em;
+
+}
+.fa-credit-card {
+    color: #1259c3;
+    font-size: 3em;
+}
+
+@media (min-width: 769px){
+    .buscador-destop {
+        display: flex;
+        justify-content: space-between;
+    }
+    .search {
+        height: 20px;
+        width: 650px;
+    }
+    .lupita {
+        height: 25px;
+    }
+    nav {
+     display: flex;
+
+ justify-content: space-around;
+ 
+    }
+    .primerul {
+        display: flex;
+        font-size: 20px;
+       justify-content: safe;
+
+
+    }
+    .segundoul {
+        display: flex;
+        font-size: 20px;
+     
+
+
+    }
+    .burger-menu {
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+      
+
+
+    
+
+
+
