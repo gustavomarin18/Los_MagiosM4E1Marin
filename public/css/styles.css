@@ -26,14 +26,14 @@ nav {
 
 
 
-      header {
+header {
     background-color:  #EAC926;;
 }
     .logoybarra { 
     display: flex;
-   padding-top: 5vw;
-   padding-left: 5vw;
-   padding-right: 5vw;
+padding-top: 5vw;
+padding-left: 5vw;
+padding-right: 5vw;
 
 }
 .logo {
@@ -70,8 +70,9 @@ nav ul{
     font-size: 18px;
     margin:auto;
     position: relative;
-    bottom: 5px;}
-         h3 {
+    bottom: 5px;} 
+    
+h3 {
     font-size: 24px;
 }
 main section article i{
@@ -155,16 +156,58 @@ footer {
     color: #1259c3;
     font-size: 3em;
 }
+/* formularios login */
+.create_login {
+    text-align: center; }
+    .control {
+        width: 70%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        height: 25px;
+    }
+    .boton_input{
+        background-color: #1259c3;
+        color:white;
+        height: 25px;
+        width: 70%;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;}
+
+        /* formularios register */
+
+.create_register{
+    text-align: center;
+    width: 25%;
+    background-color: grey;
+    margin: auto;
+}
+.control-register {
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    height: 25px;
+
+}
+.boton_register {
+
+
+background-color: red;
+font-size: 20px;
+}
+
+
+        
+
+
+
+
 
 @media (min-width: 769px){
     .buscador-desktop {
         display: flex;
-       justify-content: space-around
-       border: red 2px dashed;
-
-
-       
-    }
+    justify-content: space-around
+    border: red 2px dashed;}
     .buscador {
     
         margin-top: 40px;
@@ -187,32 +230,32 @@ footer {
         top: 30px;
 
     }
-  
-  
+    li {
+        margin: 0 10px;
+    }
+
 
 
     
 
+nav {
+    display: flex;
 
-    nav {
-     display: flex;
-
- justify-content: space-around;
- padding-top: 25px;
- padding-bottom: 10px;
- 
-    }
+justify-content: space-around;
+padding-top: 25px;
+padding-bottom: 10px;
+}
     .primerul {
         display: flex;
         font-size: 20px;
-       justify-content: space-around
+    justify-content: space-around
 
 
     }
     .segundoul {
         display: flex;
         font-size: 20px;
-     
+    
 
 
     }
@@ -223,7 +266,7 @@ footer {
 
 
 
-   
+
 
     @media (min-width: 1200px){
 
@@ -252,8 +295,7 @@ h3 {
 }
 nav {
     display: flex;
-   justify-content: space-between;
-  
+justify-content: space-between;
 }
 .buscador-desktop {
     display: flex;
@@ -261,7 +303,7 @@ nav {
 }
 .buscador {
 
- border: red 3px dashed;
+border: red 3px dashed;
 }
 footer h3 {
     text-align: center;
@@ -269,7 +311,7 @@ footer h3 {
 .search {
     width: 550px;
     height: 40px;
-}
+}}
 
 
 
@@ -281,7 +323,7 @@ footer h3 {
 
 
 
-      
+
 
 
     
