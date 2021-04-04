@@ -407,7 +407,7 @@ font-size: 45px;
         h4 {
             display: block;
             text-align: left;
-        }
+        }}
         
 
 
@@ -448,12 +448,7 @@ font-size: 45px;
 .footer-article {
     flex: 1 1 10%;
     height: auto;
-    margin: 20px 20px 20px 20px;
-   
-   
-
-
-
+    margin: 20px 20px 20px 20px;}
 }
 
 
@@ -471,6 +466,5 @@ font-size: 45px;
 
 
     
-
 
 
