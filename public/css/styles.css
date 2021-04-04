@@ -12,45 +12,63 @@ body {
     background-color: #ebebeb;
 }
 
-main {
+header {
+    background-color:  #EAC926;
+    padding: 15px;
+}
+.header-top {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+.logomercado {
+    width: 50%;
+        margin-bottom: 15px;
 
-    width: 90%;
-text-align: center;}
-nav {
+}
+.buscador {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+
+}
+.fa-search {
+    font-size: 0;
+
+
+
+
+}
+
+
+
+
+
+.mano {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.header-nav {
     display: none;
 }
 
 
-
-
-
-
-
-header {
-    background-color:  #EAC926;;
-}
-    .logoybarra { 
-    display: flex;
-padding-top: 5vw;
-padding-left: 5vw;
-padding-right: 5vw;
-
-}
-.logo {
-    width: 45vw;
-}
-.buscador {
-
-    position: relative;
-    top: 10px;
-    right: -15px;
-}
-
-.cuotas {
-    text-align: center; 
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
 
 nav ul{
     list-style: none;
@@ -59,79 +77,108 @@ nav ul{
     
     
     }
-.burger-menu {
-    background-color:#1259c3 ;
-    color: #ffffff;
+.menu-hamburger {
     display: block;
-    max-width: 50px;
-    padding: 15px 0;
-    border-radius: 8px;
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 5px;
+    padding-top: 8px;
+    width: 50px;
+    height: 40px;
     text-align: center;
-    font-size: 18px;
-    margin:auto;
-    position: relative;
-    bottom: 5px;} 
+    margin: auto;   
+    font-size: 20px; }
+
+
+
+
+
+main{
+margin-bottom: 40px;
+
+}
+.main-section-h3 {
+    color:  #666;
+    text-align: left;
+    font-size: 25px;
+    margin: 20px 5%;
+}
+.main__article {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.product_img {
+    width: 100%;
+}
+.article__boton {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: #39b54a solid 1px;
+    margin-left: 5%;}
     
-h3 {
-    font-size: 24px;
-}
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    }
+    .iconoCamion {
+        font-size: 20px;
+        color: #39b54a;
+        margin-left: 5%;}
+        .article__precio {
+            color: #666;
+            font-size: 22px;
+            margin-bottom: 0;
+            margin-left: 5%;
+        }
+        .article__descuento {
+            color: #39b54a;
+            margin-top: 0;
+            font-size: 19px;
+            margin-left: 5%;
+            padding-bottom: 20px;
+        }
+        h4 {
+            display: none;
+            color: #8f8787;
+            font-size: 15px;
+            padding-bottom: 20px;
+            margin-left: 5%;
+        }
+        .main-article-detalle{
+            font-size: 25px;
+            margin-left: 20px;
+        }
+    
 
 
 
 
 
 
-.precio {
-    font-size: 18px;
-    display: inline;
-    position: relative;
-    right:30%;
-}
-
-.descuentos {
-    font-size: 16px;
-    display: inline;
-    position: relative;
-    right: 25%;
-}
-p {
-    font-size: 12px;
-}
-h4 {
-    font-size: 16px;
-    display: none;
-}
 
 
 
 
 
 
-.descuentos {
-    color: #39b54a;
-}
-.fa-truck {
-    position: relative;
-    color:#39b54a;
-    padding: 8px 6px;
-    border: solid 1px #39b54a;
-    border-radius: 50%;
-    top: -25px;
-    right: 15%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -143,43 +190,69 @@ footer {
     text-align: center;
 }
 
-.fa-user-shield {
+
+.iconofooter {
     color: #1259c3;
-    font-size: 3em;
-}
-.fa-gift {
-    color: #1259c3;
-    font-size: 3em;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 0.9s;
 
 }
-.fa-credit-card {
-    color: #1259c3;
-    font-size: 3em;
+
+.iconofooter:hover{
+    color: red;
+
 }
+
+
+
+
+
 /* formularios login */
 .create_login {
     text-align: center; }
     .control {
         width: 70%;
-        margin-bottom: 5px;
-        margin-top: 5px;
+    margin-top: 5px;
         height: 25px;
     }
     .boton_input{
-        background-color: #1259c3;
+        background-color: green;
         color:white;
-        height: 25px;
+       height: 25px;
         width: 70%;
         border-radius: 5px;
         margin-top: 5px;
-        margin-bottom: 5px;}
+        margin-bottom: 5px;
+      transition: all;
+    }
+
+        .boton_input:hover {
+background-color: #0022aa;
+
+
+
+
+        }
+
+
+
+        input:valid,
+textarea:valid {
+    background: white;
+}
+
+input:invalid,
+textarea:invalid {
+    background: red;
+}
 
         /* formularios register */
 
 .create_register{
     text-align: center;
     width: 25%;
-    background-color: grey;
+    background-color: #666;
     margin: auto;
 }
 .control-register {
@@ -192,10 +265,41 @@ footer {
 .boton_register {
 
 
-background-color: red;
+background-color: #1259c3;
 font-size: 20px;
+color: white;
+border-radius: 50px;
 }
+.enviarFormulario{
+font-size: 45px;
 
+}
+.perfilDeUsuario {
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+    color: white;
+}
+.fechadenacimiento{
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+    color: white;
+
+}
+.label-intereses {
+    font-size: 20px;
+    position: relative;
+
+    color: white;
+}
+.seleccioneFoto {
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+    color: white;
+
+}
 
         
 
@@ -204,64 +308,117 @@ font-size: 20px;
 
 
 @media (min-width: 769px){
-    .buscador-desktop {
+    .header-top {
         display: flex;
-    justify-content: space-around
-    border: red 2px dashed;}
-    .buscador {
-    
-        margin-top: 40px;
-        position: relative;
-        right:  -25px;
-        top: -15px;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;  
     }
-    .search {
-        width: 220px;
+    .logomercado {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+
+
+    }
+    .buscador {
+        flex: 1 1 10%;
+        align-self: center;
+        margin-left: 10%;
         height: 20px;
 
 
     }
-    .logo {
-        width: 50%;
-    }
-    .cuotas {
-        position: relative;
-        right:  25px;
-        top: 30px;
+    .fa-search {
+      font-size: 1em;
+        align-self: center;
+        margin-left: 0.5%;
+       
 
     }
-    li {
-        margin: 0 10px;
+    .mano {
+        flex: 1 1 30%;
+            align-self: center;
+            margin: 0;
+
+
     }
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+        .primerul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+        .segundoul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+        li {
+            padding-left: 20px;
+        }
+        .menu-hamburger {
+            display: none;
+        }
+        .main__section__h3{
+            width: 90%;
+            padding-top: 20px;
+        }    
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+        }    
+        .main-section-h3{
+            width: 90%;
+            padding-top: 20px;
+        }    
+        .main__article{
+            flex: 1 1 40%;
+            height: auto;
+            margin: 20px 20px 20px 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }  
+        .article__boton{
+            margin-left: 75%;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .iconoCamion{
+            text-align: center;
+            font-size: 15px;
+        }
+        .main__article__detalle{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .descuentos{
+            flex: 1 1 40%;
+        }
+        .product_img{
+            width: 100%;
+        }
+        h4 {
+            display: block;
+            text-align: left;
+        }
+        
+
 
 
 
     
 
-nav {
-    display: flex;
-
-justify-content: space-around;
-padding-top: 25px;
-padding-bottom: 10px;
-}
-    .primerul {
-        display: flex;
-        font-size: 20px;
-    justify-content: space-around
 
 
-    }
-    .segundoul {
-        display: flex;
-        font-size: 20px;
-    
 
 
-    }
-    .burger-menu {
-        display: none;
-    }
 
 
 
@@ -270,48 +427,35 @@ padding-bottom: 10px;
 
     @media (min-width: 1200px){
 
-.basado {
-    display: flex;
-    flex: 1 1 20%;
-    height: auto;
-    margin: 20px 20px 20px 20px ;
-justify-content: space-between;
-position: relative;
-right: -55px;}
-.basado2 {
-    display: flex;
-    flex: 1 1 20%;
-    height: auto;
-    margin: 20px 20px 20px 20px ;
-justify-content: space-between;
-position: relative;
-right: -55px;}
-.main__article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-h3 {
-    text-align: start;
-    padding: 15px;
-}
-nav {
-    display: flex;
-justify-content: space-between;
-}
-.buscador-desktop {
-    display: flex;
-    justify-content: space-between;
-}
-.buscador {
 
-border: red 3px dashed;
+        .main__article{
+            flex: 1 1 20%;
+            height: auto;
+            margin: 20px 20px 20px 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+
+
+
+
+
+
+.section-footer {
+   display: flex;
+   flex-wrap: wrap;
 }
-footer h3 {
-    text-align: center;
+.footer-article {
+    flex: 1 1 10%;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+   
+   
+
+
+
 }
-.search {
-    width: 550px;
-    height: 40px;
-}}
+
 
 
 
