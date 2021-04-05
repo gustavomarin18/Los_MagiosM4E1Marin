@@ -332,19 +332,20 @@ font-size: 45px;
         flex: 1 1 10%;
         align-self: center;
         margin-left: 10%;
-        height: 20px;
+        height: 30px;
 
 
     }
     .fa-search {
-    font-size: 1em;
+    font-size: 1.5em;
         align-self: center;
         margin-left: 0.5%;
     }
     .mano {
-        flex: 1 1 30%;
+        flex: 1 1 20%;
             align-self: center;
             margin: 0;
+            font-size: 1.5em;
 
 
     }
