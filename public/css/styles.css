@@ -119,11 +119,48 @@ margin-bottom: 40px;
     border-radius: 50%;
     border: #39b54a solid 1px;
     margin-left: 5%;}
-    
-    .iconoCamion {
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+
+
+
+
+ .iconoCamion {
         font-size: 20px;
         color: #39b54a;
-        margin-left: 5%;}
+        margin-left: 5%;
+        transition: transform 1s;
+    
+        }
+        .iconoCamion:hover{
+            transform: rotate(-180deg);
+
+        }
+
+  
+
+
+
+
+
+
+
+
+
+
         .article__precio {
             color: #666;
             font-size: 22px;
@@ -149,40 +186,6 @@ margin-bottom: 40px;
             margin-left: 20px;
         }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -219,12 +222,12 @@ footer {
     .boton_input{
         background-color: green;
         color:white;
-       height: 25px;
+    height: 25px;
         width: 70%;
         border-radius: 5px;
         margin-top: 5px;
         margin-bottom: 5px;
-      transition: all;
+    transition: all;
     }
 
         .boton_input:hover {
@@ -251,15 +254,19 @@ textarea:invalid {
 
 .create_register{
     text-align: center;
-    width: 25%;
+    width: 80%;
     background-color: #666;
     margin: auto;
+    margin-top: 20px;
+    
+    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    
 }
 .control-register {
     width: 80%;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    height: 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    height: 35px;
 
 }
 .boton_register {
@@ -330,11 +337,9 @@ font-size: 45px;
 
     }
     .fa-search {
-      font-size: 1em;
+    font-size: 1em;
         align-self: center;
         margin-left: 0.5%;
-       
-
     }
     .mano {
         flex: 1 1 30%;
@@ -381,8 +386,22 @@ font-size: 45px;
             height: auto;
             margin: 20px 20px 20px 20px;
             text-align: center;
+            box-shadow:none;
+            transition: all 0.6;
+        } 
+        .main__article:hover{
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }  
+
+
+
+
+        }
+        
+        
+
+
+
+
         .article__boton{
             margin-left: 75%;
             width: 40px;
@@ -407,7 +426,20 @@ font-size: 45px;
         h4 {
             display: block;
             text-align: left;
-        }}
+            font-size: 16px;
+            opacity: 0%;
+            transition-property: all;
+            transition-duration: 0.6s;
+
+        }
+        h4:hover {
+            opacity: 100%;
+        } 
+    
+    
+    
+    }
+
         
 
 
@@ -433,7 +465,12 @@ font-size: 45px;
             height: auto;
             margin: 20px 20px 20px 20px;
             text-align: center;
+            box-shadow: none;
+            transition: all 0.8s;
+        }
+        .main__article:hover{
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
         }
 
 
@@ -442,8 +479,8 @@ font-size: 45px;
 
 
 .section-footer {
-   display: flex;
-   flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 .footer-article {
     flex: 1 1 10%;
